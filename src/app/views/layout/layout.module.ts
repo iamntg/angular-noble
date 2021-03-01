@@ -8,11 +8,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 
-import { ContentAnimateDirective } from '../../core/content-animate/content-animate.directive';
+import { ContentAnimateDirective } from '../../utils/content-animate/content-animate.directive';
 
 import { NgbDropdownModule, NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { FeahterIconModule } from '../../core/feather-icon/feather-icon.module';
+import { FeahterIconModule } from '../../utils/feather-icon/feather-icon.module';
 
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';

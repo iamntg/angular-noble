@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { FeahterIconModule } from '../../../core/feather-icon/feather-icon.module';
+import { FeahterIconModule } from '../../../utils/feather-icon/feather-icon.module';
 
 // ngx-quill
 import { QuillModule } from 'ngx-quill';

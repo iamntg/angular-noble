@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { DashboardDummyData } from './dashboard-dummy.data';
-import { FinancialPerformance, OperatingPerformance, SalesLead, CustomerPerson, CustomerAccount, Properties } from './dashboard.model';
+import { DashboardDummyData } from '../../../mock-data/dashboard-mock.data';
+import {
+  FinancialPerformance,
+  OperatingPerformance,
+  SalesLead,
+  CustomerPerson,
+  CustomerAccount,
+  Properties,
+} from '../../../models/dashboard.model';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -34,7 +41,7 @@ export class DashboardComponent implements OnInit {
     this.customerList = DashboardDummyData.customerList;
     this.customerAccountList = DashboardDummyData.customerAccounts;
     this.propertiesList = DashboardDummyData.properties;
-    
+
   }
 
   ngOnInit(): void {

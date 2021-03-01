@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 
 import { LayoutModule } from './views/layout/layout.module';
-import { AuthGuard } from './core/guard/auth.guard';
+import { AuthGuard } from './utils/guards/auth.guard';
 
 import { AppComponent } from './app.component';
 import { ErrorPageComponent } from './views/pages/error-page/error-page.component';

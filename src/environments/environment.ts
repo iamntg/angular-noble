@@ -2,8 +2,13 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+const BASE_URL = "https://u3pgbxg4gg.execute-api.us-east-1.amazonaws.com/"
+
 export const environment = {
-  production: false
+  production: false,
+  authURL: BASE_URL + 'auth/v1',
+  customerURL: BASE_URL + 'customer/v1',
+  performanceURL: BASE_URL + 'performance/v1',
 };
 
 /*

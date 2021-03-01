@@ -1,4 +1,4 @@
-import { CustomerPerson, SalesLead, OperatingPerformance, FinancialPerformance, CustomerAccount, Properties } from './dashboard.model';
+import { CustomerPerson, SalesLead, OperatingPerformance, FinancialPerformance, CustomerAccount, Properties } from '../models/dashboard.model';
 
 
 export class DashboardDummyData {

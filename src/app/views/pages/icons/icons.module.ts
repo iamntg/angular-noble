@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
-import { FeahterIconModule } from '../../../core/feather-icon/feather-icon.module';
+import { FeahterIconModule } from '../../../utils/feather-icon/feather-icon.module';
 
 import { IconsComponent } from './icons.component';
 import { FeatherComponent } from './feather/feather.component';
