@@ -9,6 +9,36 @@
     <div class="card">
       <div class="card-body">
         <h6 class="card-title">Quick Search</h6>
+        <div class="form-group">
+          <label for="customerAccountSelection">Customer Account:</label>
+          <ng-select [items]="customerAccountList"
+            id="customerAccountSelection"
+            bindLabel="name"
+            bindValue="id"
+            placeholder="type to search an account"
+            [(ngModel)]="searchCustomerAccount">
+          </ng-select>
+        </div>
+        <div class="form-group">
+          <label for="customerPersonSelection">Customer Person:</label>
+          <ng-select [items]="customerList"
+            id="customerPersonSelection"
+            bindLabel="name"
+            bindValue="id"
+            placeholder="type to search a customer"
+            [(ngModel)]="searchCustomerPerson">
+          </ng-select>
+        </div>
+        <div class="form-group">
+          <label for="propertiesSelection">Properties:</label>
+          <ng-select [items]="propertiesList"
+            id="propertiesSelection"
+            bindLabel="name"
+            bindValue="id"
+            placeholder="type to search a property"
+            [(ngModel)]="searchProperty">
+          </ng-select>
+        </div>
       </div>
     </div>
   </div>

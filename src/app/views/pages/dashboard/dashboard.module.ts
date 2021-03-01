@@ -9,6 +9,9 @@ import { NgbDropdownModule, NgbDatepickerModule } from '@ng-bootstrap/ng-bootstr
 // Ng-ApexCharts
 import { NgApexchartsModule } from "ng-apexcharts";
 
+// Ng-select
+import { NgSelectModule } from '@ng-select/ng-select';
+
 // Ng2-charts
 import { ChartsModule } from 'ng2-charts';
 
@@ -31,7 +34,8 @@ const routes: Routes = [
     NgbDropdownModule,
     NgbDatepickerModule,
     NgApexchartsModule,
-    ChartsModule
+    ChartsModule,
+    NgSelectModule,
   ]
 })
 export class DashboardModule { }

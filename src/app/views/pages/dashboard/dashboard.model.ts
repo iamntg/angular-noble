@@ -21,3 +21,21 @@ export interface SalesLead {
   name: string;
   email: string;
 }
+
+export interface CustomerPerson {
+  id: number;
+  name: string;
+  email: string;
+}
+
+export interface CustomerAccount {
+  id: number;
+  name: string;
+}
+
+export interface Properties {
+  id: number;
+  name: string;
+  address: string;
+}
+
