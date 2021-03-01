@@ -8,9 +8,11 @@ import { LayoutModule } from './views/layout/layout.module';
 import { AuthGuard } from './utils/guards/auth.guard';
 
 import { AppComponent } from './app.component';
-import { ErrorPageComponent } from './views/pages/error-page/error-page.component';
+import { ErrorPageComponent } from './views/pages/general/error-page/error-page.component';
 
 import { HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     LayoutModule,
+    FormsModule,
   ],
   providers: [
     AuthGuard,

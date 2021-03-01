@@ -4,7 +4,7 @@ import { HttpClient as Http, HttpHeaders } from '@angular/common/http';
 import { catchError, finalize, map } from 'rxjs/operators'
 
 @Injectable()
-export class HttpClient {
+export class HttpClientService {
   constructor(private http: Http) {
   }
 
@@ -27,7 +27,6 @@ export class HttpClient {
         }),
         finalize(() => {
           //OPTIONAL: stop spinner
-          console.log('finalize');
         })
       )
   }

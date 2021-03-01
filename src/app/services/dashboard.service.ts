@@ -1,6 +1,6 @@
 import { throwError as observableThrowError, Observable } from 'rxjs';
 import { Injectable } from "@angular/core";
-import { HttpClient } from "./_httpclient.service";
+import { HttpClientService } from "./_httpclient.service";
 
 import { environment } from 'src/environments/environment';
 
@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
 @Injectable()
 export class DashboardService {
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClientService) {
   }
 
   getCustomers() {

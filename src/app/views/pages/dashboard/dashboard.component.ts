@@ -1,3 +1,4 @@
+import { DashboardService } from './../../../services/dashboard.service';
 import { Component, OnInit } from '@angular/core';
 import { DashboardDummyData } from '../../../mock-data/dashboard-mock.data';
 import {
@@ -28,7 +29,7 @@ export class DashboardComponent implements OnInit {
   searchProperty: string = null;
 
 
-  constructor() {
+  constructor(private _dashboardService: DashboardService) {
     // financial performance list mock data
     this.financialPerformanceList = DashboardDummyData.financialPerformanceList;
 
@@ -45,6 +46,10 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this._dashboardService.getCustomers().subscribe(result => {
+      console.log(result);
+      // do format result and map as needed.
+    })
   }
 
 }

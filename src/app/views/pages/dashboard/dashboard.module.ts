@@ -1,21 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
 
 import { FeahterIconModule } from 'src/app/utils/feather-icon/feather-icon.module';
-import { NgbDropdownModule, NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
-
-// Ng-ApexCharts
-import { NgApexchartsModule } from "ng-apexcharts";
 
 // Ng-select
 import { NgSelectModule } from '@ng-select/ng-select';
 
-// Ng2-charts
-import { ChartsModule } from 'ng2-charts';
+import { HttpClientService } from './../../../services/_httpclient.service';
+import { DashboardService } from './../../../services/dashboard.service';
 
 import { DashboardComponent } from './dashboard.component';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -29,13 +25,13 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    FormsModule,
     FeahterIconModule,
-    NgbDropdownModule,
-    NgbDatepickerModule,
-    NgApexchartsModule,
-    ChartsModule,
     NgSelectModule,
+    FormsModule,
+  ],
+  providers: [
+    DashboardService,
+    HttpClientService,
   ]
 })
 export class DashboardModule { }
